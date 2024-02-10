@@ -23,10 +23,10 @@
 ## Table of Contents
 
 - [Web](#web)
+- [Features](#features)
 - [Stack](#stack)
 - [Game](#game)
 - [Arquitecture](#arquitecture)
-- [Features](#features)
 - [Concepts](#concepts)
 
 </br>
@@ -39,6 +39,30 @@
 
 </br>
 </br>
+
+
+
+## Features
+
+- **Real-time Multiplayer Pong:** Engage in exciting Pong matches with friends or other online players in a real-time multiplayer setup.
+
+- **Play Against IA:** A working IA to  give you the oportunity to improve your gaming to impress your friends.
+
+- **Authentication:** Standard User Authentication and OAuth 42 intra implementation
+  
+- **Friends:** Users can add other users as friends and see their status (online, offline, in a game)
+
+- **Match History:** Users can see their and search for other uers match history and stats.
+
+- **Leaderboard:** Users go up and down in ranking after each win/loss
+  
+- **Tournaments:** Users can create and join tournaments
+
+
+</br>
+</br>
+
+
 
 ## Stack
 
@@ -111,27 +135,6 @@ Entails specific decisions regarding the server's implementation in a Dockerized
 </br>
 </br>
 
-
-
-## Features
-
-- **Real-time Multiplayer Pong:** Engage in exciting Pong matches with friends or other online players in a real-time multiplayer setup.
-
-- **Play Against IA:** A working IA to  give you the oportunity to improve your gaming to impress your friends.
-
-- **Authentication:** Standard User Authentication and OAuth 42 intra implementation
-  
-- **Friends:** Users can add other users as friends and see their status (online, offline, in a game)
-
-- **Match History:** Users can see their and search for other uers match history and stats.
-
-- **Leaderboard:** Users go up and down in ranking after each win/loss
-  
-- **Tournaments:** Users can create and join tournaments
-
-
-</br>
-</br>
 
 
 ## Concepts
