@@ -1,6 +1,6 @@
 <div align="center">
 
-## PIXEL PONG
+# Ft_trascendence
 
 
 [![GitHub last commit](https://img.shields.io/github/last-commit/andresmejiaro/transcend?color=blue&label=Last%20commit&logo=git&maxAge=3600)](https://github.com/andresmejiaro/transcend/commits)
@@ -11,10 +11,14 @@
 </div>
 
 
-# Ft_trascendence
+## PIXEL PONG
 
-This project is an SPA website where users to play Pong in real-time against other players or alone against the IA while offering a seamless and visually appealing user interface.
+<div align="center"">
+  Welcome to our SPA website, where users engage in real-time matches against fellow players or challenge the intelligent AI for solo play. The project is dedicated to delivering a seamless and visually captivating user interface, enhancing the gaming experience for everyone. 
+</div>
 
+</br>
+</br>
 
 ## Table of Contents
 
@@ -31,8 +35,19 @@ This project is an SPA website where users to play Pong in real-time against oth
 
 ## Stack
 
-[![Tech Stack](https://github-readme-tech-stack.vercel.app/api/cards?title=Tech+Stack&lineCount=1&line1=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgNDggNDgiIHdpZHRoPSI0OHB4IiBoZWlnaHQ9IjQ4cHgiPjxwYXRoIGZpbGw9IiNmZmQ2MDAiIGQ9Ik02LDQyVjZoMzZ2MzZINnoiLz48cGF0aCBmaWxsPSIjMDAwMDAxIiBkPSJNMjkuNTM4IDMyLjk0N2MuNjkyIDEuMTI0IDEuNDQ0IDIuMjAxIDMuMDM3IDIuMjAxIDEuMzM4IDAgMi4wNC0uNjY1IDIuMDQtMS41ODUgMC0xLjEwMS0uNzI2LTEuNDkyLTIuMTk4LTIuMTMzbC0uODA3LS4zNDRjLTIuMzI5LS45ODgtMy44NzgtMi4yMjYtMy44NzgtNC44NDEgMC0yLjQxIDEuODQ1LTQuMjQ0IDQuNzI4LTQuMjQ0IDIuMDUzIDAgMy41MjguNzExIDQuNTkyIDIuNTczbC0yLjUxNCAxLjYwN2MtLjU1My0uOTg4LTEuMTUxLTEuMzc3LTIuMDc4LTEuMzc3LS45NDYgMC0xLjU0NS41OTctMS41NDUgMS4zNzcgMCAuOTY0LjYgMS4zNTQgMS45ODUgMS45NTFsLjgwNy4zNDRDMzYuNDUyIDI5LjY0NSAzOCAzMC44MzkgMzggMzMuNTIzIDM4IDM2LjQxNSAzNS43MTYgMzggMzIuNjUgMzhjLTIuOTk5IDAtNC43MDItMS41MDUtNS42NS0zLjM2OEwyOS41MzggMzIuOTQ3ek0xNy45NTIgMzMuMDI5Yy41MDYuOTA2IDEuMjc1IDEuNjAzIDIuMzgxIDEuNjAzIDEuMDU4IDAgMS42NjctLjQxOCAxLjY2Ny0yLjA0M1YyMmgzLjMzM3YxMS4xMDFjMCAzLjM2Ny0xLjk1MyA0Ljg5OS00LjgwNSA0Ljg5OS0yLjU3NyAwLTQuNDM3LTEuNzQ2LTUuMTk1LTMuMzY4TDE3Ljk1MiAzMy4wMjl6Ii8%2BPC9zdmc%2B%2CJavascript%2Cffffff%3Bdata%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgNDggNDgiIHdpZHRoPSI0OHB4IiBoZWlnaHQ9IjQ4cHgiIGJhc2VQcm9maWxlPSJiYXNpYyI%2BPHBhdGggZmlsbD0iIzdjNGRmZiIgZD0iTTcuMzczLDExLjQ0M0M3LjI5Myw5LjEzMiw5LjA5NCw3LDExLjUyOSw3aDI0Ljk0NmMyLjQzNSwwLDQuMjM2LDIuMTMyLDQuMTU1LDQuNDQzCWMtMC4wNzcsMi4yMjEsMC4wMjMsNS4wOTcsMC43NDcsNy40NDNjMC43MjYsMi4zNTMsMS45NTEsMy44NCwzLjk1Nyw0LjAzMXYyLjE2N2MtMi4wMDYsMC4xOTEtMy4yMywxLjY3OC0zLjk1Nyw0LjAzMQljLTAuNzI0LDIuMzQ1LTAuODI0LDUuMjIyLTAuNzQ3LDcuNDQzQzQwLjcxLDM4Ljg2OCwzOC45MDksNDEsMzYuNDc1LDQxSDExLjUyOWMtMi40MzQsMC00LjIzNi0yLjEzMi00LjE1NS00LjQ0MwljMC4wNzctMi4yMjEtMC4wMjMtNS4wOTctMC43NDctNy40NDNjLTAuNzI2LTIuMzUzLTEuOTU0LTMuODQtMy45Ni00LjAzMXYtMi4xNjdjMi4wMDYtMC4xOTEsMy4yMzMtMS42NzgsMy45Ni00LjAzMQlDNy4zNSwxNi41NCw3LjQ1MSwxMy42NjQsNy4zNzMsMTEuNDQzeiIvPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0yNy4wNzMsMjMuNDY0di0wLjAyOGMxLjg1My0wLjMyLDMuMjk5LTIuMDU3LDMuMjk5LTMuOTdjMC0xLjM1Mi0wLjUyLTIuNDk4LTEuNTA0LTMuMzEyCWMtMC45ODEtMC44MTItMi4zNTctMS4yNDEtMy45ODEtMS4yNDFIMTcuNDVWMzMuMDhoNy40NzVjMS45NDIsMCwzLjU1NS0wLjQ3NCw0LjY2My0xLjM3MmMxLjEwOS0wLjg5OSwxLjY5Ni0yLjIwNywxLjY5Ni0zLjc4MwlDMzEuMjgzLDI1LjU0NCwyOS41OTMsMjMuNzU2LDI3LjA3MywyMy40NjR6IE0yMy41OSwyMi42MDhoLTMuMTgxVjE3LjI5aDMuNzg0YzIuMDc2LDAsMy4yMTksMC45MTEsMy4yMTksMi41NjUJQzI3LjQxMywyMS42MywyNi4wNTUsMjIuNjA4LDIzLjU5LDIyLjYwOHogTTIwLjQwOSwyNC44MzRoMy43NTljMi43MTYsMCw0LjA5MiwwLjk4MSw0LjA5MiwyLjkxNmMwLDEuOTMyLTEuMzU3LDIuOTUzLTMuOTI1LDIuOTUzCWgtMy45MjZWMjQuODM0eiIvPjwvc3ZnPg%3D%3D%2CBootstrap%2C%3B)
+#### Front End
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
+#### Back End
+![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
+![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white)
+
+#### DevOps
+![CMake](https://img.shields.io/badge/CMake-%23008FBA.svg?style=for-the-badge&logo=cmake&logoColor=white)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 
 
 </br>
