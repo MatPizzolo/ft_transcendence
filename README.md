@@ -13,24 +13,45 @@
 
 # Ft_trascendence
 
-This project is about creating a website where users will play Pong with others. It has to provide a nice
-user interface and real-time multiplayer online games!
+This project is an SPA website where users to play Pong in real-time against other players or alone against the IA while offering a seamless and visually appealing user interface.
+
 
 ## Table of Contents
 
-- [Description](#description)
-- [Features](#features)
-- [Arquitecture](#arquitecture)
+- [Stack](#stack)
 - [Web](#web)
 - [Game](#game)
 - [AI](#ai)
+- [Features](#features)
+- [Arquitecture](#arquitecture)
 - [Concepts](#concepts)
 
-## Description
+</br>
+</br>
 
-# Ft_trascendence
+## Stack
 
-Ft_trascendence is a project that enables users to play Pong in real-time against other players or alone against the IA while offering a seamless and visually appealing user interface.
+[![Tech Stack](https://github-readme-tech-stack.vercel.app/api/cards?title=Tech+Stack&lineCount=1&line1=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgNDggNDgiIHdpZHRoPSI0OHB4IiBoZWlnaHQ9IjQ4cHgiPjxwYXRoIGZpbGw9IiNmZmQ2MDAiIGQ9Ik02LDQyVjZoMzZ2MzZINnoiLz48cGF0aCBmaWxsPSIjMDAwMDAxIiBkPSJNMjkuNTM4IDMyLjk0N2MuNjkyIDEuMTI0IDEuNDQ0IDIuMjAxIDMuMDM3IDIuMjAxIDEuMzM4IDAgMi4wNC0uNjY1IDIuMDQtMS41ODUgMC0xLjEwMS0uNzI2LTEuNDkyLTIuMTk4LTIuMTMzbC0uODA3LS4zNDRjLTIuMzI5LS45ODgtMy44NzgtMi4yMjYtMy44NzgtNC44NDEgMC0yLjQxIDEuODQ1LTQuMjQ0IDQuNzI4LTQuMjQ0IDIuMDUzIDAgMy41MjguNzExIDQuNTkyIDIuNTczbC0yLjUxNCAxLjYwN2MtLjU1My0uOTg4LTEuMTUxLTEuMzc3LTIuMDc4LTEuMzc3LS45NDYgMC0xLjU0NS41OTctMS41NDUgMS4zNzcgMCAuOTY0LjYgMS4zNTQgMS45ODUgMS45NTFsLjgwNy4zNDRDMzYuNDUyIDI5LjY0NSAzOCAzMC44MzkgMzggMzMuNTIzIDM4IDM2LjQxNSAzNS43MTYgMzggMzIuNjUgMzhjLTIuOTk5IDAtNC43MDItMS41MDUtNS42NS0zLjM2OEwyOS41MzggMzIuOTQ3ek0xNy45NTIgMzMuMDI5Yy41MDYuOTA2IDEuMjc1IDEuNjAzIDIuMzgxIDEuNjAzIDEuMDU4IDAgMS42NjctLjQxOCAxLjY2Ny0yLjA0M1YyMmgzLjMzM3YxMS4xMDFjMCAzLjM2Ny0xLjk1MyA0Ljg5OS00LjgwNSA0Ljg5OS0yLjU3NyAwLTQuNDM3LTEuNzQ2LTUuMTk1LTMuMzY4TDE3Ljk1MiAzMy4wMjl6Ii8%2BPC9zdmc%2B%2CJavascript%2Cffffff%3Bdata%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgNDggNDgiIHdpZHRoPSI0OHB4IiBoZWlnaHQ9IjQ4cHgiIGJhc2VQcm9maWxlPSJiYXNpYyI%2BPHBhdGggZmlsbD0iIzdjNGRmZiIgZD0iTTcuMzczLDExLjQ0M0M3LjI5Myw5LjEzMiw5LjA5NCw3LDExLjUyOSw3aDI0Ljk0NmMyLjQzNSwwLDQuMjM2LDIuMTMyLDQuMTU1LDQuNDQzCWMtMC4wNzcsMi4yMjEsMC4wMjMsNS4wOTcsMC43NDcsNy40NDNjMC43MjYsMi4zNTMsMS45NTEsMy44NCwzLjk1Nyw0LjAzMXYyLjE2N2MtMi4wMDYsMC4xOTEtMy4yMywxLjY3OC0zLjk1Nyw0LjAzMQljLTAuNzI0LDIuMzQ1LTAuODI0LDUuMjIyLTAuNzQ3LDcuNDQzQzQwLjcxLDM4Ljg2OCwzOC45MDksNDEsMzYuNDc1LDQxSDExLjUyOWMtMi40MzQsMC00LjIzNi0yLjEzMi00LjE1NS00LjQ0MwljMC4wNzctMi4yMjEtMC4wMjMtNS4wOTctMC43NDctNy40NDNjLTAuNzI2LTIuMzUzLTEuOTU0LTMuODQtMy45Ni00LjAzMXYtMi4xNjdjMi4wMDYtMC4xOTEsMy4yMzMtMS42NzgsMy45Ni00LjAzMQlDNy4zNSwxNi41NCw3LjQ1MSwxMy42NjQsNy4zNzMsMTEuNDQzeiIvPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0yNy4wNzMsMjMuNDY0di0wLjAyOGMxLjg1My0wLjMyLDMuMjk5LTIuMDU3LDMuMjk5LTMuOTdjMC0xLjM1Mi0wLjUyLTIuNDk4LTEuNTA0LTMuMzEyCWMtMC45ODEtMC44MTItMi4zNTctMS4yNDEtMy45ODEtMS4yNDFIMTcuNDVWMzMuMDhoNy40NzVjMS45NDIsMCwzLjU1NS0wLjQ3NCw0LjY2My0xLjM3MmMxLjEwOS0wLjg5OSwxLjY5Ni0yLjIwNywxLjY5Ni0zLjc4MwlDMzEuMjgzLDI1LjU0NCwyOS41OTMsMjMuNzU2LDI3LjA3MywyMy40NjR6IE0yMy41OSwyMi42MDhoLTMuMTgxVjE3LjI5aDMuNzg0YzIuMDc2LDAsMy4yMTksMC45MTEsMy4yMTksMi41NjUJQzI3LjQxMywyMS42MywyNi4wNTUsMjIuNjA4LDIzLjU5LDIyLjYwOHogTTIwLjQwOSwyNC44MzRoMy43NTljMi43MTYsMCw0LjA5MiwwLjk4MSw0LjA5MiwyLjkxNmMwLDEuOTMyLTEuMzU3LDIuOTUzLTMuOTI1LDIuOTUzCWgtMy45MjZWMjQuODM0eiIvPjwvc3ZnPg%3D%3D%2CBootstrap%2C%3B)
+
+
+
+</br>
+
+## Web
+
+![Game_menus](https://github.com/MatPizzolo/ft_transcendence/blob/main/readme-tools/trascend-whole-vid.gif)
+
+
+
+</br>
+
+## Game
+
+![GAME_DESIGN](https://github.com/MatPizzolo/ft_transcendence/blob/main/readme-tools/game.gif)
+
+Detalla cómo se implementó el juego de Pong, los controles, la lógica del juego, etc.
+
+
 
 ## Features
 
@@ -76,20 +97,6 @@ Entails specific decisions regarding the server's implementation in a Dockerized
   Within the Nginx configuration, settings for port 3000, typically used for Node.js applications or frontend services, might be established. Additionally, SSL/TLS configurations could be defined to ensure secure communication over HTTPS for enhanced data encryption and security measures. These SSL settings are crucial for encrypting data transmitted between clients and the server, particularly when dealing with sensitive information.
 
 - **Python-pong:** This Python code implements a Pong game using the curses library for the Command Line Interface (CLI). It incorporates a primary loop allowing players to control paddles using designated keys. The code utilizes the curses module for the user interface, providing functionalities such as displaying the game screen and managing keyboard events for player control. Additionally, it enables interaction with a web server through HTTP requests and employs JSON files to record the game states at specific time intervals.
-
-## Web
-
-![Game_menus](https://github.com/andresmejiaro/transcend/blob/readme_documentation/attach-files/MENUS.gif)
-
-sdgzdg
-
-
-## Game
-
-![GAME_DESIGN](https://github.com/andresmejiaro/transcend/blob/readme_documentation/attach-files/DESIGN.gif)
-
-Detalla cómo se implementó el juego de Pong, los controles, la lógica del juego, etc.
-
 
 ## AI
 Explica la implementación del modo de juego contra la IA, cómo se diseñó y qué estrategias sigue la IA.
