@@ -22,13 +22,20 @@
 
 ## Table of Contents
 
-- [Stack](#stack)
 - [Web](#web)
+- [Stack](#stack)
 - [Game](#game)
-- [AI](#ai)
-- [Features](#features)
 - [Arquitecture](#arquitecture)
+- [Features](#features)
 - [Concepts](#concepts)
+
+</br>
+</br>
+
+## Web
+
+![Game_menus](https://github.com/MatPizzolo/ft_transcendence/blob/main/readme-tools/trascend-whole-vid.gif)
+
 
 </br>
 </br>
@@ -46,37 +53,25 @@
 ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white)
 
 #### DevOps
-![CMake](https://img.shields.io/badge/CMake-%23008FBA.svg?style=for-the-badge&logo=cmake&logoColor=white)
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
+Makefile
 
 
 </br>
-
-## Web
-
-![Game_menus](https://github.com/MatPizzolo/ft_transcendence/blob/main/readme-tools/trascend-whole-vid.gif)
-
-
-
 </br>
+
 
 ## Game
 
-![GAME_DESIGN](https://github.com/MatPizzolo/ft_transcendence/blob/main/readme-tools/game.gif)
+It is crucial for the game to have server-side functionality as the authoritative source of truth and control. This ensures a secure and fair gaming environment by preventing unauthorized manipulation or cheating on the client side. However, the acknowledgment of latency issues prompts the incorporation of front-end capabilities with JavaScript. This dual approach allows for a responsive and enjoyable user experience, where the front end can handle certain aspects of the game in real-time, minimizing the impact of latency on player interactions.
 
-Detalla cómo se implementó el juego de Pong, los controles, la lógica del juego, etc.
+This balance between server-side robustness and front-end responsiveness contributes to an optimal and inclusive gaming experience for all users.
+
+</br>
+</br>
 
 
-
-## Features
-
-- **Real-time Multiplayer Pong:** Engage in exciting Pong matches with friends or other online players in a real-time multiplayer setup.
-  
-- **Secure User Management:** Robust user authentication and management system ensuring secure access to the gaming platform.
-
-- **Alone against the machine:** A working IA to  give you the oportunity to improve your gaming to impress your friends.
-
-- **Users data base:** 
 
 ## Arquitecture
 
@@ -87,14 +82,6 @@ The project comprises various folders and files, each serving a distinct purpose
 ![Arquitectura de Trascendence](https://github.com/andresmejiaro/transcend/blob/readme_documentation/attach-files/Arquitecture_trascendence.png)
 
 The project structure segregates functionalities and components, dividing them into backend, frontend, testing, AI implementation, and configurations. Each directory contains specific updates and functionalities based on recent commits, aiming to enhance the overall user experience, server logic, and game functionalities.
-
-- **APItests:** Contains CLI clients for API testing, primarily focused on the CLI game.
-
-  `CLItester.py` is a Python script responsible for managing WebSocket connections, handling game updates, and rendering a terminal-based Pong game. It enables communication with a WebSocket server, updates the game canvas based on incoming data, draws game components, and performs essential terminal actions such as screen clearing. Customizations or enhancements might be necessary depending on specific use cases.
-
-  The `apitester.py` Python script is a utility tool designed for making HTTP requests to an API. It handles functionalities like obtaining CSRF tokens, signing up users, and executing various API calls (GET, POST, PUT, DELETE) using the requests library. The script supports CLI usage and requires proper endpoint specifications along with optional data for POST and PUT requests.
-
-  The `wstester.py` Python script acts as a WebSocket client, allowing users to interact with a WebSocket server. It prompts for user input to specify the Tournament ID and Client ID, establishes a WebSocket connection to the provided URI, and enables users to send and receive messages in JSON format, facilitating communication with the WebSocket server through command inputs.
 
 - **Backend:** Handles the server-side logic and functionalities. Recent updates include enhancements related to lobby WebSocket and online status. Using as image base `python:3.7-alpine` and exposes de port 8000 to allow backend communication.
   
@@ -113,8 +100,39 @@ Entails specific decisions regarding the server's implementation in a Dockerized
 
 - **Python-pong:** This Python code implements a Pong game using the curses library for the Command Line Interface (CLI). It incorporates a primary loop allowing players to control paddles using designated keys. The code utilizes the curses module for the user interface, providing functionalities such as displaying the game screen and managing keyboard events for player control. Additionally, it enables interaction with a web server through HTTP requests and employs JSON files to record the game states at specific time intervals.
 
-## AI
-Explica la implementación del modo de juego contra la IA, cómo se diseñó y qué estrategias sigue la IA.
+- **APItests:** Contains CLI clients for API testing, primarily focused on the CLI game.
+
+  `CLItester.py` is a Python script responsible for managing WebSocket connections, handling game updates, and rendering a terminal-based Pong game. It enables communication with a WebSocket server, updates the game canvas based on incoming data, draws game components, and performs essential terminal actions such as screen clearing. Customizations or enhancements might be necessary depending on specific use cases.
+
+  The `apitester.py` Python script is a utility tool designed for making HTTP requests to an API. It handles functionalities like obtaining CSRF tokens, signing up users, and executing various API calls (GET, POST, PUT, DELETE) using the requests library. The script supports CLI usage and requires proper endpoint specifications along with optional data for POST and PUT requests.
+
+  The `wstester.py` Python script acts as a WebSocket client, allowing users to interact with a WebSocket server. It prompts for user input to specify the Tournament ID and Client ID, establishes a WebSocket connection to the provided URI, and enables users to send and receive messages in JSON format, facilitating communication with the WebSocket server through command inputs.
+
+</br>
+</br>
+
+
+
+## Features
+
+- **Real-time Multiplayer Pong:** Engage in exciting Pong matches with friends or other online players in a real-time multiplayer setup.
+
+- **Play Against IA:** A working IA to  give you the oportunity to improve your gaming to impress your friends.
+
+- **Authentication:** Standard User Authentication and OAuth 42 intra implementation
+  
+- **Friends:** Users can add other users as friends and see their status (online, offline, in a game)
+
+- **Match History:** Users can see their and search for other uers match history and stats.
+
+- **Leaderboard:** Users go up and down in ranking after each win/loss
+  
+- **Tournaments:** Users can create and join tournaments
+
+
+</br>
+</br>
+
 
 ## Concepts
 
@@ -170,3 +188,8 @@ sqlparse==0.4.4
 typing_extensions==4.7.1
 
 zipp==3.15.0
+
+
+
+</br>
+</br>
