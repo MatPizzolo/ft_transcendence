@@ -9,7 +9,7 @@
 [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/andresmejiaro/transcend?label=Code%20size&maxAge=3600)](https://github.com/andresmejiaro/transcend)
 
 
-[![es](https://img.shields.io/badge/lang-es-yellow.svg)](https://github.com/MatPizzolo/Simply-Recipes)
+[![es](https://img.shields.io/badge/lang-es-yellow.svg)](https://github.com/MatPizzolo/ft_transcendence/)
 
 
 </div>
