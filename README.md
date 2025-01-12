@@ -1,12 +1,16 @@
+<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <div align="center">
 
 # Ft_trascendence
 
 
-[![GitHub last commit](https://img.shields.io/github/last-commit/andresmejiaro/transcend?color=blue&label=Last%20commit&logo=git&maxAge=3600)](https://github.com/andresmejiaro/transcend/commits)
+[![GitHub último commit](https://img.shields.io/github/last-commit/andresmejiaro/transcend?color=blue&label=Último%20commit&logo=git&maxAge=3600)](https://github.com/andresmejiaro/transcend/commits)
 [![GitHub forks](https://img.shields.io/github/forks/andresmejiaro/transcend?label=Forks&color=blue&maxAge=3600)](https://github.com/andresmejiaro/transcend/network)
 
-[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/andresmejiaro/transcend?label=Code%20size&maxAge=3600)](https://github.com/andresmejiaro/transcend)
+[![GitHub tamaño del código en bytes](https://img.shields.io/github/languages/code-size/andresmejiaro/transcend?label=Tamaño%20del%20código&maxAge=3600)](https://github.com/andresmejiaro/transcend)
+
+
+[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/MatPizzolo/ft_transcendence/blob/main/README.en.md)
 
 </div>
 
@@ -14,57 +18,52 @@
 ## PIXEL PONG
 
 <div align="center"">
-  Welcome to our SPA website, where users engage in real-time matches against fellow players or challenge the intelligent AI for solo play. The project is dedicated to delivering a seamless and visually captivating user interface, enhancing the gaming experience for everyone. 
+  Bienvenido a nuestro sitio web SPA, donde los usuarios participan en partidas en tiempo real contra otros jugadores o desafían a la IA inteligente para juego en solitario. El proyecto está dedicado a ofrecer una interfaz de usuario fluida y visualmente cautivadora, mejorando la experiencia de juego para todos.
 </div>
 
 </br>
 </br>
 
-## Table of Contents
+## Índice de Contenidos
 
 - [Web](#web)
-- [Features](#features)
-- [Stack](#stack)
-- [Game](#game)
-- [Arquitecture](#arquitecture)
-- [Concepts](#concepts)
+- [Características](#características)
+- [Tecnologías](#tecnologías)
+- [Juego](#juego)
+- [Arquitectura](#arquitectura)
+- [Conceptos](#conceptos)
 
 </br>
 </br>
 
 ## Web
 
-![Game_menus](https://github.com/MatPizzolo/ft_transcendence/blob/main/readme-tools/trascend-whole-vid.gif)
+![Menús_del_juego](https://github.com/MatPizzolo/ft_transcendence/blob/main/readme-tools/trascend-whole-vid.gif)
 
 
 </br>
 </br>
 
+## Características
 
+- **Pong Multijugador en Tiempo Real:** Participa en emocionantes partidas de Pong con amigos u otros jugadores en línea en un entorno multijugador en tiempo real.
 
-## Features
+- **Juega Contra IA:** Una IA funcional para darte la oportunidad de mejorar tu juego para impresionar a tus amigos.
 
-- **Real-time Multiplayer Pong:** Engage in exciting Pong matches with friends or other online players in a real-time multiplayer setup.
+- **Autenticación:** Implementación de Autenticación de Usuario Estándar y OAuth 42 intra
 
-- **Play Against IA:** A working IA to  give you the oportunity to improve your gaming to impress your friends.
+- **Amigos:** Los usuarios pueden agregar a otros usuarios como amigos y ver su estado (en línea, desconectado, en una partida)
 
-- **Authentication:** Standard User Authentication and OAuth 42 intra implementation
-  
-- **Friends:** Users can add other users as friends and see their status (online, offline, in a game)
+- **Historial de Partidas:** Los usuarios pueden ver su historial de partidas y buscar estadísticas de otros usuarios.
 
-- **Match History:** Users can see their and search for other uers match history and stats.
+- **Tabla de Clasificación:** Los usuarios suben y bajan en el ranking después de cada victoria/derrota
 
-- **Leaderboard:** Users go up and down in ranking after each win/loss
-  
-- **Tournaments:** Users can create and join tournaments
-
+- **Torneos:** Los usuarios pueden crear y unirse a torneos
 
 </br>
 </br>
 
-
-
-## Stack
+## Tecnologías
 
 #### Front End
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
@@ -81,66 +80,47 @@
 ![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
 Makefile
 
+</br>
+</br>
+
+## Juego
+
+Es crucial que el juego tenga funcionalidad del lado del servidor como fuente autoritativa de verdad y control. Esto asegura un entorno de juego seguro y justo al prevenir la manipulación no autorizada o el engaño en el lado del cliente. Sin embargo, el reconocimiento de problemas de latencia impulsa la incorporación de capacidades front-end con JavaScript. Este enfoque dual permite una experiencia de usuario receptiva y agradable, donde el front-end puede manejar ciertos aspectos del juego en tiempo real, minimizando el impacto de la latencia en las interacciones del jugador.
+
+Este balance entre la robustez del lado del servidor y la capacidad de respuesta del front-end contribuye a una experiencia de juego óptima e inclusiva para todos los usuarios.
 
 </br>
 </br>
 
+## Arquitectura
 
-## Game
+### Visión General de la Estructura del Proyecto
 
-It is crucial for the game to have server-side functionality as the authoritative source of truth and control. This ensures a secure and fair gaming environment by preventing unauthorized manipulation or cheating on the client side. However, the acknowledgment of latency issues prompts the incorporation of front-end capabilities with JavaScript. This dual approach allows for a responsive and enjoyable user experience, where the front end can handle certain aspects of the game in real-time, minimizing the impact of latency on player interactions.
-
-This balance between server-side robustness and front-end responsiveness contributes to an optimal and inclusive gaming experience for all users.
-
-</br>
-</br>
-
-
-
-## Arquitecture
-
-### Project Structure Overview
-
-The project comprises various folders and files, each serving a distinct purpose:
+El proyecto comprende varias carpetas y archivos, cada uno con un propósito distinto:
 
 ![Arquitectura de Trascendence](https://github.com/andresmejiaro/transcend/blob/readme_documentation/attach-files/Arquitecture_trascendence.png)
 
-The project structure segregates functionalities and components, dividing them into backend, frontend, testing, AI implementation, and configurations. Each directory contains specific updates and functionalities based on recent commits, aiming to enhance the overall user experience, server logic, and game functionalities.
+La estructura del proyecto segrega funcionalidades y componentes, dividiéndolos en backend, frontend, pruebas, implementación de IA y configuraciones. Cada directorio contiene actualizaciones y funcionalidades específicas basadas en commits recientes, con el objetivo de mejorar la experiencia general del usuario, la lógica del servidor y las funcionalidades del juego.
 
-- **Backend:** Handles the server-side logic and functionalities. Recent updates include enhancements related to lobby WebSocket and online status. Using as image base `python:3.7-alpine` and exposes de port 8000 to allow backend communication.
+- **Backend:** Maneja la lógica y funcionalidades del lado del servidor. Las actualizaciones recientes incluyen mejoras relacionadas con el WebSocket del lobby y el estado en línea. Usando como imagen base `python:3.7-alpine` y expone el puerto 8000 para permitir la comunicación del backend.
   
-  The `settings.py` file determine the server's particular behavior, Dockerized environments, application management, database, the utilization of channels for real-time communication, and CORS to enable requests between different origins.
-Entails specific decisions regarding the server's implementation in a Dockerized environment, channel layers for asynchronous and real-time communication, and permitted origins for requests between domains.
-  
-  The `urls.py` file manages URL routing by mapping specific URLs to corresponding views or endpoints within the Django server. It configures the admin panel, API endpoints, WebSocket URLs, and serves static media files, controlling the handling of incoming requests in the web application.
+  El archivo `settings.py` determina el comportamiento particular del servidor, entornos Dockerizados, gestión de aplicaciones, base de datos, la utilización de canales para comunicación en tiempo real y CORS para permitir peticiones entre diferentes orígenes.
 
-  The `manage.py` script is Django's command-line tool used for administrative tasks. It configures the Django environment, executes management commands, and serves as the entry point for interacting with the Django project via the command line, facilitating tasks like database operations, server startup, and project management.
+  El archivo `urls.py` gestiona el enrutamiento de URL mapeando URLs específicas a las vistas o endpoints correspondientes dentro del servidor Django. Configura el panel de administración, endpoints de API, URLs de WebSocket y sirve archivos multimedia estáticos.
 
-- **Frontend:** Single Page Applications (SPAs) operate by dynamically updating content on a single web page without requiring full page reloads. They utilize JavaScript to fetch data from the server, update the DOM, and manage user interactions seamlessly. Effective SPAs manage routing, allowing users to navigate within the app without causing full-page reloads, enhancing the user experience. Moreover, robust user authentication and identification play a pivotal role in SPAs, ensuring secure access to features, data, and resources. Proper authentication implementations enhance data security, privacy, and user trust by confirming the identity of individuals accessing the application, thereby safeguarding sensitive information and functionality.
+  El script `manage.py` es la herramienta de línea de comandos de Django utilizada para tareas administrativas. Configura el entorno Django, ejecuta comandos de gestión y sirve como punto de entrada para interactuar con el proyecto Django a través de la línea de comandos.
 
-- **Nginx:** Includes configurations and updates related to the NGINX web server, particularly in merging the develop branch.
+- **Frontend:** Las Aplicaciones de Página Única (SPAs) operan actualizando dinámicamente el contenido en una única página web sin requerir recargas completas. Utilizan JavaScript para obtener datos del servidor, actualizar el DOM y gestionar las interacciones del usuario sin problemas.
 
-  Within the Nginx configuration, settings for port 3000, typically used for Node.js applications or frontend services, might be established. Additionally, SSL/TLS configurations could be defined to ensure secure communication over HTTPS for enhanced data encryption and security measures. These SSL settings are crucial for encrypting data transmitted between clients and the server, particularly when dealing with sensitive information.
+- **Nginx:** Incluye configuraciones y actualizaciones relacionadas con el servidor web NGINX, particularmente en la fusión de la rama de desarrollo.
 
-- **Python-pong:** This Python code implements a Pong game using the curses library for the Command Line Interface (CLI). It incorporates a primary loop allowing players to control paddles using designated keys. The code utilizes the curses module for the user interface, providing functionalities such as displaying the game screen and managing keyboard events for player control. Additionally, it enables interaction with a web server through HTTP requests and employs JSON files to record the game states at specific time intervals.
+- **Python-pong:** Este código Python implementa un juego Pong usando la biblioteca curses para la Interfaz de Línea de Comandos (CLI).
 
-- **APItests:** Contains CLI clients for API testing, primarily focused on the CLI game.
+- **APItests:** Contiene clientes CLI para pruebas de API, principalmente enfocados en el juego CLI.
 
-  `CLItester.py` is a Python script responsible for managing WebSocket connections, handling game updates, and rendering a terminal-based Pong game. It enables communication with a WebSocket server, updates the game canvas based on incoming data, draws game components, and performs essential terminal actions such as screen clearing. Customizations or enhancements might be necessary depending on specific use cases.
+## Conceptos
 
-  The `apitester.py` Python script is a utility tool designed for making HTTP requests to an API. It handles functionalities like obtaining CSRF tokens, signing up users, and executing various API calls (GET, POST, PUT, DELETE) using the requests library. The script supports CLI usage and requires proper endpoint specifications along with optional data for POST and PUT requests.
-
-  The `wstester.py` Python script acts as a WebSocket client, allowing users to interact with a WebSocket server. It prompts for user input to specify the Tournament ID and Client ID, establishes a WebSocket connection to the provided URI, and enables users to send and receive messages in JSON format, facilitating communication with the WebSocket server through command inputs.
-
-</br>
-</br>
-
-
-
-## Concepts
-
-Libraries installed in the Django Backend
-
+Bibliotecas instaladas en el Backend Django:
 
 asgiref==3.7.2
 
